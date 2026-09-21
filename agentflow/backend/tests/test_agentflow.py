@@ -34,7 +34,7 @@ def test_health_endpoint_structure():
             result = await health_check()
         return result
 
-    result = asyncio.get_event_loop().run_until_complete(run())
+    result = asyncio.run(run())
     assert "status" in result
     assert "database" in result
     assert "providers" in result
