@@ -1,0 +1,45 @@
+# AgentFlow Backend Dependencies
+# Tested on Python 3.14.6 — all packages have pre-built wheels (no MSVC required)
+
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+
+# Pydantic / settings (wheels available for Python 3.14)
+pydantic==2.13.5
+pydantic-settings==2.15.0
+
+# Database — psycopg3 binary with pool (pre-built wheels for Python 3.14)
+psycopg[binary,pool]==3.3.6
+
+# LangGraph / LangChain
+langgraph==0.2.60
+langchain-core==0.3.28
+langchain-google-genai==2.0.8
+
+# Google Gemini
+google-generativeai==0.8.3
+
+# OpenAI-compatible client (for OpenRouter)
+openai==1.59.5
+
+# HTTP client
+httpx==0.28.1
+
+# Safe math evaluation
+asteval==1.0.5
+
+# Date/time
+python-dateutil==2.9.0
+pytz==2024.2
+
+# Logging
+python-json-logger==3.2.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-mock==3.14.0
+
+# Environment
+python-dotenv==1.0.1
